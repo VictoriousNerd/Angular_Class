@@ -1,0 +1,12 @@
+<div class="container my-5">
+  <div class="row">
+    <div class="col-md-12">
+      <button class="btn btn-primary" (click)="toggleMessage()">
+        Toggle Message
+      </button>
+      <div *ngIf="messageVisible" class="my-3">
+        <h1>Hello World!</h1>
+      </div>
+    </div>
+  </div>
+</div>

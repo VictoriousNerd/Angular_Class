@@ -1,0 +1,10 @@
+var myString = "Hello World!";
+var myNumber = 42;
+var myBoolean = true;
+var myTuple = ["Victor", 2024];
+var myArray = ["Mustang", "Camaro", "Challenger"];
+console.log("String:", myString);
+console.log("Number:", myNumber);
+console.log("Boolean:", myBoolean);
+console.log("Tuple:", myTuple);
+console.log("Array:", myArray);

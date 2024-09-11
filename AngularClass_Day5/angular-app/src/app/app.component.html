@@ -1,0 +1,17 @@
+<div class="container my-5">
+  <div [ngSwitch]="activeTab">
+    <div class="btn-group">
+      <button class="btn btn-primary" (click)="activeTab = 'home'">Home</button>
+      <button class="btn btn-primary" (click)="activeTab = 'products'">Products</button>
+    </div>
+    <div class="col my-3" *ngSwitchCase="'home'">
+      <h1 *ngIf="showHelloWorld">Hello World</h1>
+    </div>
+    <div class="col my-3" *ngSwitchCase="'products'">
+      <app-product-list></app-product-list>
+    </div>
+    <div *ngSwitchDefault>
+      <p>Select a tab</p>
+    </div>
+  </div>
+</div>

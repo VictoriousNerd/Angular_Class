@@ -1,0 +1,22 @@
+<div class="container my-5">
+  <h1 class="mb-3">Greeting App</h1>
+  <form (ngSubmit)="onSubmit()" #greetingForm="ngForm">
+    <div class="form-group mb-3">
+      <label for="name" class="form-label">Name:</label>
+      <input 
+        type="text" 
+        id="name" 
+        name="name" 
+        class="form-control" 
+        [(ngModel)]="name" 
+        #nameInput="ngModel"
+        required 
+      />
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="!greetingForm.form.valid">Submit</button>
+  </form>
+
+  <ng-container *ngIf="showGreeting">
+    <app-greeting [name]="name"></app-greeting>
+  </ng-container>
+</div>
