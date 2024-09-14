@@ -1,0 +1,10 @@
+ol.carousel-indicators {
+    list-style: none;
+    margin: 0;
+}
+.carousel-item {
+    height: 220px;
+}
+.carousel-caption {
+    padding: 0;
+}

@@ -1,0 +1,7 @@
+.careers dt {
+    margin-top: 1rem;
+}
+.careers dd {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1rem;
+}

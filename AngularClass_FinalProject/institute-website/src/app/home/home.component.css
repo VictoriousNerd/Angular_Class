@@ -1,0 +1,14 @@
+#carousel {
+  padding: 0;
+}
+.carousel-item img {
+  height: 600px;
+}
+.carousel-caption {
+  text-align: left;
+  top: 30%;
+  bottom: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 2rem;
+  max-width: 700px;
+}

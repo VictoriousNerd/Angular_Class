@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 my-5">
+            <h1 class="mb-3">Blog Posts</h1>
+            <hr />
+            <div class="row py-4">
+                <div class="col-md-6 d-flex flex-row" *ngFor="let post of posts">
+                    <div class="card mb-3" style="max-width: 40rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ post.title }}</h5>
+                            <p class="card-text">{{ post.body }}</p>
+                            <a href="https://www.blogger.com/" target="_blank" rel="noreferrer noopener" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

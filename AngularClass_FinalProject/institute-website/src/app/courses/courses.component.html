@@ -1,0 +1,15 @@
+<div class="container my-5">
+    <div class="row py-5">
+        <div class="col-sm-12 col-md-8 mx-auto">
+            <h1>Courses</h1>
+            <hr />
+            <ul class="nav flex-column">
+                <li class="nav-item" *ngFor="let course of courses">
+                    <a (click)="viewCourseDetail(course)" class="nav-link">
+                        {{ course.name }}
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
